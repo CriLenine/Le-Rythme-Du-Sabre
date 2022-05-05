@@ -1,50 +1,32 @@
 # Le-Rythme-Du-Sabre
-Projet VR/ Editor de niveau du genre beat saber
+VR BeatSaber-like including level editor.
+We worked on this project as a team of 8 students for 4 weeks
 
-## Contenu
+## Content
 
-Le jeu comporte 3 scènes : 
-  - un menu principal
-  - une scène de jeu
-  - une scène d'édition de niveau
+The game holds 3 scenes : 
+  - the main menu;
+  - the play scene;
+  - the level edition scene;
 
-## Fonctionnement
+## Features
 
-Dans la scène d'édition, le joueur dispose des 2 manettes VR pour construire le niveau. 
+Once in edition scene, the player is supposed to use 2 VR controllers to build a level. 
 
-La manette de droite est liée à la disposition des blocs et a pour fonctionnalités de :
+The right controller is for cube placements, the player can :
+- put cubes on one of the prepared placement points (trigger - pression)
+- Change the current cube color (Grip - pression)
+- Change the current cube rotation (Touchpad - slide)
 
-  - Poser des blocs sur l'un des différents emplacements prévus par le GD (boutton trigger - pression)
-  - Changer la couleur du bloc actuel (Grip - pression)
-  - Changer la rotation du bloc actuel (Touchpad - glisser)
-
-La manette de gauche est celle liée à la musique et au niveau, elle permet entre autres de :
-
-  - Lancer la musique à partir de l'emplacement actuel de la grille de placement des cubes (bouton trigger - pression)
-  - Stopper la musique (Grip - pression)
-  - Visualiser le niveau en avancant/reculant (Touchpad - glisser)
+The left controller is for music and progressing in the level, the player can :
+- Play the music from the current position (trigger - pression)
+- Stop the music (Grip - pression)
+- Visualize the level by going forwards or backwards (Touchpad - slide)
     
-Il est également possible pour le joueur de mettre en pause et d'afficher un menu en utilisant la touche menu sur n'importe laquelle des manettes.
+A pause menu is also available with the menu button of any of the controllers.
 
-Une fois le niveau complété, le joueur peut alors sauvegarder et lancer son niveau depuis le menu principal : le but du jeu étant de casser les blocs en rythme dans le bon sens et avec le sabre ayant la couleur correspondante.
+Once a level is completed, the player can save it and this level will be available from the main menu : the aim of the game being to break the blocks in the right direction with the corresponding saber.
 
-## Améliorations à implémenter
+## My Participation
 
-Actuellement il n'est pas possible d'avoir plusieurs niveaux de sauvegardés, cela signifie qu'à chaque sauvegarde la précédente est écrasée.
-Un menu intermédiaire permettant de choisir un slot lors de l'édit/jeu pourrait être une amélioration significative.
-
-Il n'est pas possible de supprimer des cubes déjà positionnés, par conséquent si le joueur fait une erreur il ne peut pas la corriger.
-Nous avons pensé à ajouter une option "CTRL Z" permettant au joueur d'annuler la dernière pose.
-
-Il est très difficile de prendre en main notre interface de création de niveau, aucun indicateur n'aide le joueur à savoir :
-
-  - où il se situe dans le niveau / dans la musique
-  - le nombre de cubes positionnés
-  - la couleur des sabres
-  - quelles actions sont possibles
-
-Afin d'y remédier, il faudrait intégrer une UI avec un slider pour indiquer la progression dans le niveau et designer un onglet spécifiant les actions possibles.
-
-Enfin, notre projet était centré en premier lieu sur le bon fonctionnement d'un niveau beat saber en VR, nous n'avons donc pas un mode de jeu très complet.
-Nous avons pensé à ajouter un système de score et de combo, conformément à BS étant donné que nos fonctions de détection du sens de coupe et de la couleur du sabre fonctionne.
-D'autres part, des effets graphiques sur les sabres, les blocs, des animations lors de la découpes seraient un + indéniable.
+I coded the cube placement (*CubePlacement.cs*) and the interaction of the saber with cubes (*Saber.cs*).
