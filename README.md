@@ -1,6 +1,6 @@
 # Le-Rythme-Du-Sabre
 VR BeatSaber-like including level editor.
-We worked on this project as a team of 8 students for 4 weeks
+We worked on this project as a team of 8 students for 4 weeks (aside our usual schedule).
 
 ## Content
 
